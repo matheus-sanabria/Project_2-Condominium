@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{height: 100%;}
+
+
+/* inicio classes auxiliares */
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+/* fim classes auxiliares */
+
+header.header{
+    background-color: #D6D6D6;
+    padding: 10px 2%;
+}
+
+div.logo_1{
+    float: left;
+    width: 130px;
+    height: 50px;
+    /* background-color: purple; */
+    background-image: url('../images/logo1.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+div.logo_2{
+    float: right;
+    width: 130px;
+    height: 50px;
+    /* background-color: green; */
+    background-image: url('../images/logo2.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media screen and (max-width: 376px){
+    div.logo_1,div.logo_2{
+        float: none;
+        display: block;
+        margin: 0.2vh auto 0 auto;
+    }
+}
