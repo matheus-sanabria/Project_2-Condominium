@@ -21,33 +21,112 @@ html, body{height: 100%;}
 
 header.header{
     background-color: #D6D6D6;
-    padding: 10px 2%;
+    padding: 10px 2% 30px 2%;
 }
 
-div.logo_1{
-    float: left;
+div.logo{
     width: 130px;
     height: 50px;
     /* background-color: purple; */
-    background-image: url('../images/logo1.png');
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-div.logo_2{
+.one{
+    float: left;
+    background-image: url('../images/logo1.png');
+}
+
+.two{
     float: right;
-    width: 130px;
-    height: 50px;
-    /* background-color: green; */
     background-image: url('../images/logo2.png');
-    background-size: 100% auto;
-    background-repeat: no-repeat;
+}
+
+section.cover-form{
+    width: 100%;
+    padding: 0 2%
+}
+
+div.bg{
+    height: 460px;
+    /* padding: 15px; */
+    background-image: url('../images/bg-form.jpg');
+    background-size: cover;
     background-position: center;
 }
+
+div.bg__form{
+    float: right;
+    width: 300px;
+    height: 110%;
+    margin-right: 40px;
+    position: relative;
+    top: -5%;
+}
+
+div.bg__form h2{
+    padding: 20px 15px;
+    color: black;
+    font-size: 18px;
+    font-weight: normal;
+    background-color: rgba(234, 236,239, 0.9);
+}
+
+form.bg__form__form{
+    height: 100%;
+    max-height: 430px;
+    padding: 30px 7.5% 0 7.5%;
+    background-color: rgba(234, 236,239, 0.7);
+
+}
+
+form.bg__form__form label{
+    font-size: 15px;
+    color: #525252;
+}
+
+form.bg__form__form .form__wrapper:not(:first-child){
+    margin-top: 30px;
+}
+
+form.bg__form__form .form__wrapper:last-child{
+    margin-top: 15px;
+}
+
+form.bg__form__form input[type=text]{
+    width: 100%;
+    height: 45px;
+    border: 1px solid #ccc;
+    line-height: 45px;
+    padding-left: 10px;
+}
+
+.form__button{
+    border: 0;
+    width: 100%;
+    height: 45px;
+}
+
+.form__button input[type=submit]{
+    border: 0;
+    width: 100%;
+    height: 45px;
+    font-size: 15px;
+    cursor: pointer;
+    color: white;
+    background-color: #033c50;
+    text-transform: uppercase;
+}
+
+.form__wrapper p{
+    color: #525252;
+}
+
+
 
 @media screen and (max-width: 376px){
-    div.logo_1,div.logo_2{
+    [class^="logo"]{
         float: none;
         display: block;
         margin: 0.2vh auto 0 auto;
