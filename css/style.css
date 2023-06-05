@@ -58,9 +58,9 @@ div.bg{
 
 div.bg__form{
     float: right;
-    width: 300px;
+    max-width: 300px;
     height: 110%;
-    margin-right: 40px;
+    margin: 0 5%;
     position: relative;
     top: -5%;
 }
@@ -123,7 +123,12 @@ form.bg__form__form input[type=text]{
     color: #525252;
 }
 
-
+@media screen and (max-width: 768px){
+    div.bg__form{
+        float: none;
+        margin: 0 auto;
+    }
+}
 
 @media screen and (max-width: 376px){
     [class^="logo"]{
