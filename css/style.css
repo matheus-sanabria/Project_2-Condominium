@@ -9,10 +9,11 @@ html, body{height: 100%;}
 
 
 /* inicio classes auxiliares */
-.container{
+.center{
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 2%;
 }
 
 .clear{
@@ -46,10 +47,10 @@ div.logo{
 
 section.cover-form{
     width: 100%;
-    padding: 0 2%
 }
 
 div.bg{
+    position: relative;
     height: 500px;
     /* padding: 15px; */
     background-image: url('../images/bg-form.jpg');
@@ -58,13 +59,12 @@ div.bg{
 }
 
 div.bg__form{
-    float: right;
     width: 90%;
     max-width: 400px;
-    height: 110%;
-    margin: 0 5%;
-    position: relative;
-    top: -5%;
+    height: 105%;
+    position: absolute;
+    right: 40px;
+    top: -2.5%;
     border: 0;
     box-shadow: 2px 2px 2px 2px rgb(180, 180, 180);
 }
@@ -78,8 +78,8 @@ div.bg__form h2{
 }
 
 form.bg__form__form{
-    height: 451px;
-    padding: 30px 7.5% 0 7.5%;
+    padding: 24px;
+    /* padding-top: 20px; */
     background-color: rgba(234, 236,239, 0.7);
 
 }
@@ -129,34 +129,95 @@ form.bg__form__form input[type=text]{
 
 section.call{
     width: 100%;
-    margin-top: -50px;
     text-align: center;
-    display: inline-block;
-    color: black;
+    color: white
 }
 
 section.call .center{
-    padding: 40px 2%;
+    width: 100%;
+    padding: 50px 2%;
     background-color: #164e63;
+    /* display: inline-block; */
+
 
 }
 
 section.call h2{
-    width: 100%;
+    width: 90%;
     max-width: 600px;
     display: inline-block;
-    font-size: 30px;
+    font-size: 24px;
     font-weight: normal;
+    text-transform: uppercase;
+}
+
+section.call p{
+    width: 90%;
+    max-width: 600px;
+    display: inline-block;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+section.mosaic .center{
+        padding: 0;
+}
+
+div.flex-mosaic{
+    display: flex;
+}
+
+div.flex-mosaic:nth-child(2n){
+    flex-direction: row-reverse;
+}
+
+div.mosaic__item-1{
+    background-position: center;
+    background-size: cover;
+    width: 60%;
+    height: 250px;
+}
+
+
+div.mosaic__item-2{
+    width: 40%;
+    padding: 80px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+}
+
+footer.footer{
+    text-align: center;
+    padding: 20px 0;
+}
+.footer div.one{
+    float: none;
+    margin: 0 auto;
+}
+footer.footer p{
+    margin-top: 8px;
 }
 
 @media screen and (max-width: 768px){
     div.bg__form{
-        float: none;
+        position: relative;
+        right: 0;
         margin: 0 auto;
     }
 
-    section.call{
-        margin: 0;
+    div.flex-mosaic{
+        display: block;
+    }
+    
+    div.mosaic__item-1{
+        width: 100%;
+    }
+    
+    
+    div.mosaic__item-2{
+        width: 100%;
     }
 }
 
