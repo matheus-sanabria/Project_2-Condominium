@@ -11,7 +11,7 @@ html, body{height: 100%;}
 /* inicio classes auxiliares */
 .center{
     width: 100%;
-    max-width: 1200px;
+    max-width: 1024px;
     margin: 0 auto;
     padding: 0 2%;
 }
@@ -22,7 +22,7 @@ html, body{height: 100%;}
 /* fim classes auxiliares */
 
 header.header{
-    background-color:rgb(180, 180, 180);
+    background-color:rgb(220, 220, 220);
     padding: 10px 2% 30px 2%;
 }
 
@@ -130,7 +130,19 @@ form.bg__form__form input[type=text]{
 section.call{
     width: 100%;
     text-align: center;
-    color: white
+    color: white;
+}
+
+div.arrow-down{
+    position: absolute;
+    left: 50%;
+    margin-top: -32px;
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    width: 64px;
+    height: 64px;
+    background-size: 100% 100%;
+    background-image: url('../images/arrow.png');
 }
 
 section.call .center{
@@ -199,14 +211,20 @@ footer.footer{
 footer.footer p{
     margin-top: 8px;
 }
+@media screen and (max-width: 1023px){    
+    div.bg{
+        padding: 70px 0;
+        height: 128%;
+    }
 
-@media screen and (max-width: 768px){
     div.bg__form{
         position: relative;
         right: 0;
         margin: 0 auto;
     }
+}
 
+@media screen and (max-width: 768px){    
     div.flex-mosaic{
         display: block;
     }
