@@ -21,9 +21,10 @@ html, body{height: 100%;}
 }
 /* fim classes auxiliares */
 
+/* starts header */
 header.header{
     background-color:rgb(220, 220, 220);
-    padding: 10px 2% 30px 2%;
+    padding: 20px 2%;
 }
 
 div.logo{
@@ -44,7 +45,9 @@ div.logo{
     float: right;
     background-image: url('../images/logo2.png');
 }
+/* ends header */
 
+/* starts cover form section */
 section.cover-form{
     width: 100%;
 }
@@ -66,7 +69,7 @@ div.bg__form{
     right: 40px;
     top: -2.5%;
     border: 0;
-    box-shadow: 2px 2px 2px 2px rgb(180, 180, 180);
+    box-shadow: 2px 2px 5px 2px rgb(180, 180, 180);
 }
 
 div.bg__form h2{
@@ -77,27 +80,27 @@ div.bg__form h2{
     background-color: rgb(210, 210, 210);
 }
 
-form.bg__form__form{
+form.form{
     padding: 24px;
     /* padding-top: 20px; */
     background-color: rgba(234, 236,239, 0.7);
 
 }
 
-form.bg__form__form label{
+form.form label{
     font-size: 15px;
     color: #525252;
 }
 
-form.bg__form__form .form__wrapper:not(:first-child){
+form.form .form__wrapper:not(:first-child){
     margin-top: 30px;
 }
 
-form.bg__form__form .form__wrapper:last-child{
+form.form .form__wrapper:last-child{
     margin-top: 20px;
 }
 
-form.bg__form__form input[type=text]{
+form.form input[type=text]{
     width: 100%;
     height: 45px;
     border: 1px solid #ccc;
@@ -126,7 +129,9 @@ form.bg__form__form input[type=text]{
 .form__wrapper p{
     color: #525252;
 }
+/* ends cover form section */
 
+/* starts call section */
 section.call{
     width: 100%;
     text-align: center;
@@ -170,7 +175,9 @@ section.call p{
     font-size: 18px;
     margin-top: 10px;
 }
+/* ends call section */
 
+/* starts mosaic section */
 section.mosaic .center{
         padding: 0;
 }
@@ -199,18 +206,26 @@ div.mosaic__item-2{
     justify-content: center;
     text-align: justify;
 }
+/* ends mosaic section */
 
+/* starts footer */
 footer.footer{
     text-align: center;
-    padding: 20px 0;
+    padding: 20px 2% 15px 2%;
+    background-color:rgb(220, 220, 220);
 }
 .footer div.one{
     float: none;
     margin: 0 auto;
 }
-footer.footer p{
-    margin-top: 8px;
+.footer h2 a{
+    text-decoration: none;
+    color: black;
+    font-size: 0.75em;
+    font-weight: 300;
 }
+/* ends footer */
+
 @media screen and (max-width: 1023px){    
     div.bg{
         padding: 70px 0;
@@ -239,10 +254,17 @@ footer.footer p{
     }
 }
 
-@media screen and (max-width: 376px){
+@media screen and (max-width: 409px){
     [class^="logo"]{
         float: none;
         display: block;
         margin: 0.2vh auto 0 auto;
+    }
+
+    .footer h2 a{
+        text-decoration: none;
+        color: black;
+        font-size: 0.55em;
+        font-weight: 300;
     }
 }
