@@ -214,15 +214,9 @@ footer.footer{
     padding: 20px 2% 15px 2%;
     background-color:rgb(220, 220, 220);
 }
-.footer div.one{
-    float: none;
-    margin: 0 auto;
-}
-.footer h2 a{
+.footer b a{
     text-decoration: none;
     color: black;
-    font-size: 0.75em;
-    font-weight: 300;
 }
 /* ends footer */
 
@@ -259,12 +253,5 @@ footer.footer{
         float: none;
         display: block;
         margin: 0.2vh auto 0 auto;
-    }
-
-    .footer h2 a{
-        text-decoration: none;
-        color: black;
-        font-size: 0.55em;
-        font-weight: 300;
     }
 }
