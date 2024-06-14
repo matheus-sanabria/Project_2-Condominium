@@ -1,204 +1,200 @@
-*{
+/* Global Styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
 
-html, body{height: 100%;}
+html, body {
+    height: 100%;
+}
 
+/* Variables */
+:root {
+    --primary-bg-color: rgb(220, 220, 220);
+    --secondary-bg-color: rgb(210, 210, 210);
+    --form-bg-color: rgba(234, 236, 239, 0.7);
+    --button-bg-color: #033c50;
+    --text-color: #525252;
+    --highlight-color: #164e63;
+}
 
-/* inicio classes auxiliares */
-.center{
+/* Helper Classes */
+.container {
     width: 100%;
     max-width: 1024px;
     margin: 0 auto;
     padding: 0 2%;
 }
 
-.clear{
+.clear {
     clear: both;
 }
-/* fim classes auxiliares */
 
-/* starts header */
-header.header{
-    background-color:rgb(220, 220, 220);
+/* Header */
+header.header {
+    background-color: var(--primary-bg-color);
     padding: 20px 2%;
 }
 
-div.logo{
+.logo {
     width: 130px;
     height: 50px;
-    /* background-color: purple; */
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.one{
+.one {
     float: left;
     background-image: url('../images/logo1.png');
 }
 
-.two{
+.two {
     float: right;
     background-image: url('../images/logo2.png');
 }
-/* ends header */
 
-/* starts cover form section */
-section.cover-form{
+/* Cover Form Section */
+section.cover-form {
     width: 100%;
 }
 
-div.bg{
+.bg {
     position: relative;
     height: 500px;
-    /* padding: 15px; */
     background-image: url('../images/bg-form.jpg');
     background-size: cover;
     background-position: center;
 }
 
-div.bg__form{
+.bg__form {
     width: 90%;
     max-width: 400px;
     height: 105%;
     position: absolute;
     right: 40px;
     top: -2.5%;
-    border: 0;
     box-shadow: 2px 2px 5px 2px rgb(180, 180, 180);
 }
 
-div.bg__form h2{
+.bg__form h2 {
     padding: 25px 15px;
     color: black;
     font-size: 18px;
     font-weight: normal;
-    background-color: rgb(210, 210, 210);
+    background-color: var(--secondary-bg-color);
 }
 
-form.form{
+.form {
     padding: 24px;
-    /* padding-top: 20px; */
-    background-color: rgba(234, 236,239, 0.7);
-
+    background-color: var(--form-bg-color);
 }
 
-form.form label{
+.form label {
     font-size: 15px;
-    color: #525252;
+    color: var(--text-color);
 }
 
-form.form .form__wrapper:not(:first-child){
+.form .form__wrapper:not(:first-child) {
     margin-top: 30px;
 }
 
-form.form .form__wrapper:last-child{
+.form .form__wrapper:last-child {
     margin-top: 20px;
 }
 
-form.form input[type=text]{
+.form input[type="text"], .form input[type="email"], .form input[type="tel"] {
     width: 100%;
     height: 45px;
     border: 1px solid #ccc;
-    line-height: 45px;
     padding-left: 10px;
     outline: none;
 }
 
-.form__button{
-    border: 0;
+.form__button {
     width: 100%;
     height: 45px;
+    border: 0;
 }
 
-.form__button input[type=submit]{
-    border: 0;
+.form__button input[type="submit"] {
     width: 100%;
     height: 45px;
     font-size: 15px;
     cursor: pointer;
     color: white;
-    background-color: #033c50;
+    background-color: var(--button-bg-color);
     text-transform: uppercase;
+    border: none;
 }
 
-.form__wrapper p{
-    color: #525252;
+.form__wrapper p {
+    color: var(--text-color);
 }
-/* ends cover form section */
 
-/* starts call section */
-section.call{
+/* Call to Action Section */
+section.call {
     width: 100%;
     text-align: center;
     color: white;
 }
 
-div.arrow-down{
+.arrow-down {
     position: absolute;
     left: 50%;
     margin-top: -32px;
     transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
     width: 64px;
     height: 64px;
     background-size: 100% 100%;
     background-image: url('../images/arrow.png');
 }
 
-section.call .center{
+.call .container {
     width: 100%;
     padding: 50px 2%;
-    background-color: #164e63;
-    /* display: inline-block; */
-
-
+    background-color: var(--highlight-color);
 }
 
-section.call h2{
+.call h2 {
     width: 90%;
     max-width: 600px;
-    display: inline-block;
+    margin: 0 auto;
     font-size: 24px;
     font-weight: normal;
     text-transform: uppercase;
 }
 
-section.call p{
+.call p {
     width: 90%;
     max-width: 600px;
-    display: inline-block;
+    margin: 10px auto 0;
     font-size: 18px;
-    margin-top: 10px;
-}
-/* ends call section */
-
-/* starts mosaic section */
-section.mosaic .center{
-        padding: 0;
 }
 
-div.flex-mosaic{
+/* Mosaic Section */
+.mosaic .container {
+    padding: 0;
+}
+
+.flex-mosaic {
     display: flex;
 }
 
-div.flex-mosaic:nth-child(2n){
+.flex-mosaic:nth-child(2n) {
     flex-direction: row-reverse;
 }
 
-div.mosaic__item-1{
-    background-position: center;
-    background-size: cover;
+.mosaic__item-1 {
     width: 60%;
     height: 250px;
+    background-position: center;
+    background-size: cover;
 }
 
-
-div.mosaic__item-2{
+.mosaic__item-2 {
     width: 40%;
     padding: 80px 40px;
     display: flex;
@@ -206,52 +202,48 @@ div.mosaic__item-2{
     justify-content: center;
     text-align: justify;
 }
-/* ends mosaic section */
 
-/* starts footer */
-footer.footer{
+/* Footer */
+footer.footer {
     text-align: center;
     padding: 20px 2% 15px 2%;
-    background-color:rgb(220, 220, 220);
+    background-color: var(--primary-bg-color);
 }
-.footer b a{
-    text-decoration: none;
-    color: black;
-}
-/* ends footer */
 
-@media screen and (max-width: 1023px){    
-    div.bg{
+.footer a {
+    text-decoration: none;
+    color: #262626;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {    
+    .bg {
         padding: 70px 0;
         height: 128%;
     }
 
-    div.bg__form{
+    .bg__form {
         position: relative;
         right: 0;
         margin: 0 auto;
     }
 }
 
-@media screen and (max-width: 768px){    
-    div.flex-mosaic{
-        display: block;
+@media screen and (max-width: 768px) {    
+    .flex-mosaic {
+        flex-direction: column!important;
     }
     
-    div.mosaic__item-1{
-        width: 100%;
-    }
-    
-    
-    div.mosaic__item-2{
+    .mosaic__item-1,
+    .mosaic__item-2 {
         width: 100%;
     }
 }
 
-@media screen and (max-width: 409px){
-    [class^="logo"]{
+@media screen and (max-width: 409px) {
+    .logo {
         float: none;
         display: block;
-        margin: 0.2vh auto 0 auto;
+        margin: 0.2vh auto 0;
     }
 }

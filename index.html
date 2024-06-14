@@ -1,100 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
+    <!-- Definindo a codificação de caracteres para o documento -->
     <meta charset="UTF-8">
+    <!-- Garantindo a compatibilidade com o IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Configurando a viewport para uma experiência responsiva -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <meta name="charset" content="palavras,separadas,por,virgula">
-    <meta name="description" content="Conteúdo do meu site">
+    <!-- Adicionando palavras-chave para SEO -->
+    <meta name="keywords" content="condomínio, residencial, apartamentos de luxo, frente para o mar, João Paulo">
+    <!-- Adicionando uma descrição para SEO -->
+    <meta name="description" content="Descubra o Condomínio Residencial, onde o luxo encontra o conforto em apartamentos de frente para o mar. Viva a vida que você sempre sonhou.">
+    <!-- Informando o autor do documento -->
     <meta name="author" content="Matheus Sanabria Rodrigues">
+    <!-- Link para o arquivo CSS principal -->
     <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <!-- Pré-conectando para melhorar o desempenho do carregamento de fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Importando a fonte Open Sans -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <title>Projeto 2 - Condominio Residencial</title>
+    <!-- Definindo o título do documento -->
+    <title>Projeto 2 - Condomínio Residencial</title>
 </head>
 <body>
+    <!-- Cabeçalho do site -->
     <header class="header">
-        <div class="center">
-            <div class="logo one"></div><!-- /.logo_1 -->
-            <div class="logo two"></div><!-- /.logo_2 -->
-            <div class="clear"></div><!-- /.clear -->
-        </div><!-- /.container --> 
-    </header><!-- /.header -->
+        <div class="container">
+            <!-- Logotipo principal -->
+            <div class="logo one"></div>
+            <!-- Logotipo secundário -->
+            <div class="logo two"></div>
+            <!-- Elemento para limpar floats -->
+            <div class="clear"></div>
+        </div>
+    </header>
+
+    <!-- Seção do formulário de capa -->
     <section class="cover-form">
-        <div class="center bg">
+        <div class="container bg">
             <div class="bg__form">
                 <h2>Pode acreditar, por dentro é ainda mais bonito.</h2>
+                <!-- Formulário de contato -->
                 <form action="" class="form">
                     <div class="form__wrapper">
                         <label for="nome">*Nome completo:</label>
-                        <input type="text" name="nome" required placeholder="Digite o seu nome...">
-                    </div><!-- /.form__wrapper -->
+                        <input type="text" id="nome" name="nome" required placeholder="Digite o seu nome...">
+                    </div>
                     <div class="form__wrapper">
-                        <label for="e-mail">*E-mail:</label>
-                        <input type="text" name="e-mail" required placeholder="Digite o seu e-mail...">
-                    </div><!-- /.form__wrapper -->
+                        <label for="email">*E-mail:</label>
+                        <input type="email" id="email" name="email" required placeholder="Digite o seu e-mail...">
+                    </div>
                     <div class="form__wrapper">
                         <label for="telefone">*Telefone:</label>
-                        <input type="text" name="telefone" required placeholder="Digite o seu telefone...">
-                    </div><!-- /.form__wrapper -->
+                        <input type="tel" id="telefone" name="telefone" required placeholder="Digite o seu telefone...">
+                    </div>
                     <div class="form__wrapper">
-                            <button class="form__button">
-                                <input type="submit" name="acao" value="Enviar">
-                            </button><!-- /.form__button -->
-                    </div><!-- /.form__wrapper -->
+                        <button class="form__button" type="submit">
+                            Enviar
+                        </button>
+                    </div>
                     <div class="form__wrapper">
                         <p>* Campos Obrigatórios</p>
-                </div><!-- /.form__wrapper -->
-                <!-- /.bg__form -->
-            </div><!-- /.bg__form -->
-            <div class="clear"></div>
-        </div><!-- /.center bg -->
-    </section><!-- /.cover-form -->
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de chamada -->
     <section class="call">
         <div class="arrow-down"></div>
-        <div class="center">
-            <div>
-                <h2>Viva a vida que você sempre sonhou</h2>
-            </div>
-            <div>
-                <p>Coberturas e apartamentos de frente para o mar no João Paulo</p>
-            </div>
-        </div><!-- /.center -->
-    </section><!-- /.call -->
+        <div class="container">
+            <h2>Viva a vida que você sempre sonhou</h2>
+            <p>Coberturas e apartamentos de frente para o mar no João Paulo</p>
+        </div>
+    </section>
+
+    <!-- Seção de mosaico de imagens -->
     <section class="mosaic">
-        <div class="center">
+        <div class="container">
             <div class="flex-mosaic">
-                <div style="background-image: url('./images/mosaico1.jpg');" class="mosaic__item-1"></div><!-- /.mosaic__item-1 -->
+                <div style="background-image: url('./images/mosaico1.jpg');" class="mosaic__item-1"></div>
                 <div class="mosaic__item-2">
                     <p>O sol nasce para todos, mas se põe de um jeito mais exclusivo aqui.</p>
-                </div><!-- /.mosaic__item-2 -->
-            </div><!-- /.flex-mosaic -->
+                </div>
+            </div>
             <div class="flex-mosaic">
-                <div style="background-image: url('./images/mosaico2.jpg');" class="mosaic__item-1"></div><!-- /.mosaic__item-1 -->
+                <div style="background-image: url('./images/mosaico2.jpg');" class="mosaic__item-1"></div>
                 <div class="mosaic__item-2">
                     <p>Conforto e sofisticação em cada detalhe.</p>
-                </div><!-- /.mosaic__item-2 -->
-            </div><!-- /.flex-mosaic -->
+                </div>
+            </div>
             <div class="flex-mosaic">
-                <div style="background-image: url('./images/mosaico3.jpg');" class="mosaic__item-1"></div><!-- /.mosaic__item-1 -->
+                <div style="background-image: url('./images/mosaico3.jpg');" class="mosaic__item-1"></div>
                 <div class="mosaic__item-2">
                     <p>Uma vista espetacular todos os dias.</p>
-                </div><!-- /.mosaic__item-2 -->
-            </div><!-- /.flex-mosaic -->
+                </div>
+            </div>
             <div class="flex-mosaic">
-                <div style="background-image: url('./images/mosaico4.jpg');" class="mosaic__item-1"></div><!-- /.mosaic__item-1 -->
+                <div style="background-image: url('./images/mosaico4.jpg');" class="mosaic__item-1"></div>
                 <div class="mosaic__item-2">
                     <p>Venha viver o que há de melhor.</p>
-                </div><!-- /.mosaic__item-2 -->
-            </div><!-- /.flex-mosaic -->
-        </div><!-- /.center -->
-    </section><!-- /.mosaic -->
-    
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Rodapé do site -->
     <footer class="footer">
-        <div class="copyright" id="footer">
-            &copy; Copyright | <b><a href="http://www.codificadoresdenegocios.com" target="_blank">Codificadores de Negócios</a></b> | Todos os direitos reservados. <!-- Informação de direitos autorais -->
+        <div class="container">
+            <p>&copy; Copyright | <b><a href="http://www.codificadoresdenegocios.com" target="_blank">Codificadores de Negócios</a></b> | Todos os direitos reservados.</p>
         </div>
     </footer>
 </body>
