@@ -21,6 +21,10 @@
     <!-- Importando a fonte Open Sans -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <!-- Definindo o título do documento -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script> 
+    <script src="https://malsup.github.io/jquery.form.js"></script> 
+    <script src="./js/form.js"></script>
     <title>Projeto 2 - Condomínio Residencial</title>
 </head>
 <body>
@@ -42,18 +46,19 @@
             <div class="bg__form">
                 <h2>Pode acreditar, por dentro é ainda mais bonito.</h2>
                 <!-- Formulário de contato -->
-                <form action="" class="form">
+                <form id="myForm" method="post" action="./form.php" class="form">
+                    <input type="hidden" name="Formulário projeto 2" value="Formulario projeto 2">
                     <div class="form__wrapper">
-                        <label for="nome">*Nome completo:</label>
-                        <input type="text" id="nome" name="nome" required placeholder="Digite o seu nome...">
+                        <label for="name">*Nome completo:</label>
+                        <input aria-required="true" type="text" id="name" name="name" required placeholder="Digite o seu name...">
                     </div>
                     <div class="form__wrapper">
                         <label for="email">*E-mail:</label>
-                        <input type="email" id="email" name="email" required placeholder="Digite o seu e-mail...">
+                        <input aria-required="true" type="email" id="email" name="email" required placeholder="Digite o seu e-mail...">
                     </div>
                     <div class="form__wrapper">
-                        <label for="telefone">*Telefone:</label>
-                        <input type="tel" id="telefone" name="telefone" required placeholder="Digite o seu telefone...">
+                        <label for="phone">*Telefone:</label>
+                        <input aria-required="true" type="tel" id="phone" name="phone" required placeholder="Digite o seu phone...">
                     </div>
                     <div class="form__wrapper">
                         <button class="form__button" type="submit">
